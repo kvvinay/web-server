@@ -5,12 +5,12 @@ const locationn = document.getElementById('location');
 const button = document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault();
     const a = locationn.value
-    var url = '/weather?city='+a;
+    var urll = '/weather?city='+a;
     console.log(a)
 
     document.getElementById('p').textContent = 'Loading....!'
 
-    fetch(url).then((response) => {
+    fetch(urll).then((response) => {
         response.json().then((data) => {
             console.log(data.Temperature)
             console.log(data.City)
