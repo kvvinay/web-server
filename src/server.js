@@ -5,6 +5,7 @@ const geo = require('./weather')
 
 
 const app = express();
+const port = process.env.PORT || 3000
 
 const public = path.join(__dirname, '../public')
 const hbsPath = path.join(__dirname, '../HBS/templates')
@@ -78,6 +79,6 @@ app.get('*', (req, res) => {
 
 
 
-app.listen(3000 ,() => {
+app.listen(port ,() => {
     console.log('Server is running @ 3000')
 })

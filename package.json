@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server.js -e js,hbs"
+    "dev": "nodemon src/server.js -e js,hbs",
+    "live": "node src/server.js"
   },
   "author": "",
   "license": "ISC",
