@@ -53,7 +53,7 @@ app.get('/weather', (req, res) => {
         if(err){
             return res.send({
                 error: err,
-                status: '404'
+                status: '404 '
             })    
         }
         res.send({
