@@ -5,7 +5,7 @@ const locationn = document.getElementById('location');
 const button = document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault();
     const a = locationn.value
-    var url = 'http://localhost:3000/weather?city='+a;
+    var url = '/weather?city='+a;
     console.log(a)
 
     document.getElementById('p').textContent = 'Loading....!'
